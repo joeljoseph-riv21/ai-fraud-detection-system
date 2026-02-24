@@ -1,0 +1,103 @@
+{
+  "name": "FraudDetectionAutomation",
+  "projectId": "03dfb395-7297-4188-9e92-371ec8441b50",
+  "description": "AI-based financial fraud detection system using ML API and automated reporting",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[3.3.1]",
+    "UiPath.IntegrationService.Activities": "[1.23.0]",
+    "UiPath.Mail.Activities": "[2.6.10]",
+    "UiPath.System.Activities": "[25.12.1]",
+    "UiPath.WebAPI.Activities": "[2.3.2]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "26.0.186.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "NewtonsoftJson",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "b9ad6992-325b-4a07-9202-e8f13029c53c",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "workflows\\ExtractTransactionData.xaml",
+      "uniqueId": "a91f478d-bdaa-4363-8f4f-a43ed97c3d23",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "workflows\\CallFraudDetectionAPI.xaml",
+      "uniqueId": "cdbffb9a-d6bb-4e49-be81-9d60cd741273",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "workflows\\ProcessFlaggedTransactions.xaml",
+      "uniqueId": "a33f4ce1-33c3-4147-8074-39658cd5847e",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "workflows\\FreezeAccount.xaml",
+      "uniqueId": "fb4a022e-8917-4c2a-b75f-924c3812ffb9",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "workflows\\GenerateComplianceReport.xaml",
+      "uniqueId": "e09448e1-2681-43e1-aa31-b26e079c952d",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "workflows\\SendAlerts.xaml",
+      "uniqueId": "080bcece-d91d-4eaa-8baa-c2e696c89338",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "workflows\\NotifyAuthorities.xaml",
+      "uniqueId": "6c3f3a5a-a06e-4598-9550-c9934f41a367",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

@@ -1,0 +1,6 @@
+{
+  "Name": "FraudDetectionAutomation",
+  "ProjectType": "Process",
+  "Description": "AI-based financial fraud detection system using ML API and automated reporting",
+  "MainFile": "Main.xaml"
+}
